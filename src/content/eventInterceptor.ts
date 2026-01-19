@@ -75,7 +75,7 @@ export class EventInterceptor{
                     const isCopyShortCut = (event.ctrlKey || event.metaKey) && (event.key === 'c' || event.key === 'C');
                     const isCutShortCut = (event.ctrlKey || event.metaKey) && (event.key === 'x' || event.key === 'X');
 
-                    if(!isCopyShortCut && !isCutShortCut){
+                    if(!isCopyShortCut || !isCutShortCut){
                         return;
                     }
                 }
