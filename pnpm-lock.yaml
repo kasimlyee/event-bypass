@@ -11,9 +11,15 @@ importers:
       '@types/chrome':
         specifier: ^0.1.34
         version: 0.1.34
+      '@types/node':
+        specifier: ^25.0.9
+        version: 25.0.9
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
+      web-ext-types:
+        specifier: ^3.2.1
+        version: 3.2.1
 
 packages:
 
@@ -29,10 +35,19 @@ packages:
   '@types/har-format@1.2.16':
     resolution: {integrity: sha512-fluxdy7ryD3MV6h8pTfTYpy/xQzCFC7m89nOH9y94cNqJ1mDIDPut7MnRHI3F6qRmh/cT2fUjG1MLdCNb4hE9A==}
 
+  '@types/node@25.0.9':
+    resolution: {integrity: sha512-/rpCXHlCWeqClNBwUhDcusJxXYDjZTyE8v5oTO7WbL8eij2nKhUeU89/6xgjU7N4/Vh3He0BtyhJdQbDyhiXAw==}
+
   typescript@5.9.3:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+
+  web-ext-types@3.2.1:
+    resolution: {integrity: sha512-oQZYDU3W8X867h8Jmt3129kRVKklz70db40Y6OzoTTuzOJpF/dB2KULJUf0txVPyUUXuyzV8GmT3nVvRHoG+Ew==}
 
 snapshots:
 
@@ -49,4 +64,12 @@ snapshots:
 
   '@types/har-format@1.2.16': {}
 
+  '@types/node@25.0.9':
+    dependencies:
+      undici-types: 7.16.0
+
   typescript@5.9.3: {}
+
+  undici-types@7.16.0: {}
+
+  web-ext-types@3.2.1: {}

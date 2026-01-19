@@ -1,0 +1,31 @@
+{
+    "manifest_version":3,
+    "name":"Event Bypass",
+    "version":"0.1.0",
+    "description":"Bypass certain event restrictions on web pages.",
+    "permissions":[],
+    "host_permissions":["<all_urls>"],
+    "content_scripts":[
+       {
+          "matches":["<all_urls>"],
+          "js":["content/index.js"],
+          "run_at":"document_start",
+          "all_frames":true,
+          "match_about_blank":true
+       }
+    ],
+    "icons":{
+       "16":"icons/icon16.png",
+       "48":"icons/icon48.png",
+       "128":"icons/icon128.png"
+    },
+    "content_security_policy":{
+       "extension_pages":"script-src 'self'; object-src 'self'"
+    },
+    "browser_specific_settings":{
+         "gecko":{
+             "id":"unbrockright@example.com",
+             "strict_min_version":"91.0"
+         }
+    }
+}

@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"pnpm run build:chrome && pnpm run build:firefox",
-    "build:chrome":"tsc && cp manifest.chrome.json dist/manifest.json",
-    "build:firefox":"tsc && cp manifest.firefox.json dist/manifest.json",
-    "watch":"tsc --watch",
-    "clean":"rm -rf dist"
+    "build": "pnpm run build:chrome && pnpm run build:firefox",
+    "build:chrome": "tsc && cp manifest.chrome.json dist/manifest.json",
+    "build:firefox": "tsc && cp manifest.firefox.json dist/manifest.json",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
   },
   "keywords": [],
   "author": "Kasim Lyee",
@@ -16,6 +16,8 @@
   "packageManager": "pnpm@10.22.0",
   "devDependencies": {
     "@types/chrome": "^0.1.34",
-    "typescript": "^5.9.3"
+    "@types/node": "^25.0.9",
+    "typescript": "^5.9.3",
+    "web-ext-types": "^3.2.1"
   }
 }
