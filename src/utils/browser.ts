@@ -1,11 +1,11 @@
 import type { BrowserAPI, BrowserName } from "../types";
 
 export function getBrowserAPI(): BrowserAPI{
-    if(typeof browser != 'undefined'){
+    if(typeof browser !== 'undefined'){
         return browser as unknown as BrowserAPI;
     }
 
-    if(typeof chrome != 'undefined'){
+    if(typeof chrome !== 'undefined'){
         return chrome as unknown as BrowserAPI;
     }
 
